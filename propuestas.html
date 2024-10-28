@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renacimiento Excelsior | Propuestas</title>
+    <link rel="icon" href="pngtree-simulation-of-evergreen-pine-png-image_1340028.ico" type="image/x-icon">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000e0;
+            color: #fff;
+            overflow-x: hidden;
+            transition: opacity 0.5s ease; /* Transición de la opacidad */
+        }
+
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        header {
+            background-color: #2E7D32; /* Verde oscuro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px; /* Bordes redondeados */
+            margin: 20px; /* Espacio alrededor */
+        }
+
+        header h1 {
+            font-size: 1.8em;
+        }
+
+        .back-button {
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            background-color: #333;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2E7D32;
+            transform: scale(1.05);
+            box-shadow: 0px 5px 15px rgba(46, 125, 50, 0.5);
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2E7D32;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .proposal {
+            background-color: #333;
+            margin: 10px auto;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+            width: 80%;
+            text-align: left;
+        }
+
+        .proposal h3 {
+            color: #fff;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .proposal p {
+            color: #ccc;
+            font-size: 1em;
+        }
+
+        /* Estilos para pantallas pequeñas */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .proposal {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Propuestas</h1>
+    </header>
+
+    <a href="index.html" class="back-button" onclick="transitionPage(event)">Volver a Inicio</a>
+
+    <section>
+        <h2>Nuestras Propuestas</h2>
+        <div class="proposal">
+            <h3>Torneo de Truco</h3>
+            <p>Organizaremos un emocionante torneo de truco para todos los estudiantes. Inscripción con costo fijo y premios en efectivo para los ganadores.</p>
+        </div>
+
+        <div class="proposal">
+            <h3>Torneo de Ajedrez</h3>
+            <p>Para los fanáticos del ajedrez, un torneo competitivo con premios. ¡Desafía tu estrategia y demuestra tus habilidades!</p>
+        </div>
+
+        <div class="proposal">
+            <h3>Torneo de E-sports</h3>
+            <p>Competencia de videojuegos donde podrás participar y ganar premios. ¡Unite y mostrá tus habilidades en los e-sports!</p>
+        </div>
+        <div class="proposal">
+            <h3>Feria del Plato</h3>
+            <p>¡Prepárense para la Feria del Plato! Un día donde podrán traer y disfrutar de las mejores comidas hechas en casa. Además, habrá premios para los mejores platos y fondos recaudados que irán a mejoras en la escuela.</p>
+        </div>
+
+        <div class="proposal">
+            <h3>Bingo Escolar</h3>
+            <p>¡Es hora de jugar! Organizaremos un gran Bingo Escolar para todos, con increíbles premios para los ganadores. Además de ser una actividad divertida, nos ayudará a recaudar fondos para nuestras próximas actividades.</p>
+        </div>
+    </section>
+
+    <script>
+        function transitionPage(event) {
+            event.preventDefault();
+            document.body.classList.add('fade-out');
+
+            setTimeout(() => {
+                window.location.href = event.target.href;
+            }, 500);
+        }
+    </script>
+</body>
+</html>
+
