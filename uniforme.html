@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renacimiento Excelsior | Propuestas</title>
+    <link rel="icon" href="pngtree-simulation-of-evergreen-pine-png-image_1340028.ico" type="image/x-icon">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000e0;
+            color: #fff;
+            overflow-x: hidden;
+            transition: opacity 0.5s ease; /* Transición de la opacidad */
+        }
+
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        header {
+            background-color: #2E7D32; /* Verde oscuro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px; /* Bordes redondeados */
+            margin: 20px; /* Espacio alrededor */
+        }
+
+        header h1 {
+            font-size: 1.8em;
+        }
+
+        .back-button {
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            background-color: #333;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2E7D32;
+            transform: scale(1.05);
+            box-shadow: 0px 5px 15px rgba(46, 125, 50, 0.5);
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2E7D32;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .proposal {
+            background-color: #333;
+            margin: 10px auto;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+            width: 80%;
+            text-align: left;
+        }
+
+        .proposal h3 {
+            color: #fff;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .proposal p {
+            color: #ccc;
+            font-size: 1em;
+        }
+
+        /* Estilos para pantallas pequeñas */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .proposal {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Propuesta</h1>
+    </header>
+
+    <a href="index.html" class="back-button" onclick="transitionPage(event)">Volver a Inicio</a>
+
+    <section>
+        <h2>Nuestra Propuesta</h2>
+        <div class="proposal">
+            <div class="activity">
+                <h3>Colores de las Prendas</h3>
+                <p>Sabemos que cada día llegan con algunas prendas de colores que a veces no están en las normas. Por lo tanto presentaremos ante los directivos un proyecto para permitir los colores <strong>blanco</strong> y <strong>negro</strong> para nuestras <strong>remeras, buzos y camperas</strong> ¡Un cambio que seguro nos daría más opciones y comodidad!</p>
+            </div>                  
+    </section>
+
+    <script>
+        function transitionPage(event) {
+            event.preventDefault();
+            document.body.classList.add('fade-out');
+
+            setTimeout(() => {
+                window.location.href = event.target.href;
+            }, 500);
+        }
+    </script>
+</body>
+</html>

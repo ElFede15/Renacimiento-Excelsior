@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renacimiento Excelsior</title>
+    <link rel="icon" href="pngtree-simulation-of-evergreen-pine-png-image_1340028.ico" type="image/x-icon">
+
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000e0;
+            color: #fff;
+            overflow-x: hidden;
+            transition: opacity 0.5s ease; /* Transición de la opacidad */
+        }
+
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease; /* Hace que la opacidad pase de visible a invisible */
+        }
+
+        header {
+            background-color: #2E7D32; /* Verde oscuro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px; /* Bordes redondeados */
+            margin: 20px; /* Espacio alrededor */
+        }
+
+        header h1 {
+            font-size: 1.8em;
+        }
+
+        .mobile-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .mobile-nav a {
+            width: 80%;
+            margin: 10px 0;
+            padding: 15px;
+            color: #fff;
+            background-color: #333;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.1em;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav a:hover {
+            background-color: #2E7D32;
+            transform: scale(1.05);
+            box-shadow: 0px 5px 15px rgba(46, 125, 50, 0.5);
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2E7D32;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #ccc;
+            line-height: 1.6; /* Espaciado dentro del párrafo */
+            margin-bottom: 1.5em; /* Espacio entre párrafos */
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+         /* Estilos para pantallas pequeñas */
+         @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .mobile-nav a {
+                font-size: 1.2em;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lista: Centro de Estudiantes 2024</h1>
+    </header>
+
+    <section class="welcome">
+        <p>¡Hola, compañeros! Somos la lista <strong>Renacimiento Excelsior</strong>, y estamos aquí para hacer que este año sea inolvidable. Con Zahira Dip como secretaria, Luciana Caputo como tesorera, Federico Rinaldi, Leo Wolochin, Thiago Pereira como moderadores, y  Bianca Guillen, como presidente, formamos un equipo increíblemente unido y motivado.</p>
+
+        <p>Queremos que lean atentamente nuestras propuestas, para que las puedan comprender y luego saber si es lo mejor para ustedes.</p>
+
+        <p>Nuestro objetivo es claro: Aportar, ayudar y dejar una huella que haga de este año el mejor de todos. Queremos que cada uno de ustedes se sienta parte de esta comunidad, que su voz sea escuchada y que juntos enfrentemos todos los desafíos que se nos presenten.</p>
+    </section>
+
+    <nav class="mobile-nav">
+        <!-- Los botones llaman a la función de transición para la animación -->
+        <a href="integrantes.html" onclick="transitionPage(event)">Integrantes</a>
+        <a href="propuestas.html" onclick="transitionPage(event)">Propuestas de Eventos</a>
+        <a href="Cooperacion.html" onclick="transitionPage(event)">Cooperacion entre alumnos/as</a>
+        <a href="finanzas.html" onclick="transitionPage(event)">¿Que haremos con el dinero?</a>
+        <a href="uniforme.html" onclick="transitionPage(event)">Cambios en el Uniforme</a>
+    </nav>
+
+    <script>
+        function transitionPage(event) {
+            event.preventDefault(); // Evita que el enlace cambie de página inmediatamente
+            document.body.classList.add('fade-out'); // Activa la animación de desvanecimiento
+
+            // Cambia de página después de que termine la animación
+            setTimeout(() => {
+                window.location.href = event.target.href;
+            }, 500); // Duración de la animación en milisegundos
+        }
+    </script>
+</body>
+</html>
+
+
